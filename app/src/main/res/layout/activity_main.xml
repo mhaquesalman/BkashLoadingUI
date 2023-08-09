@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.example.myuiapplication.CustomView
+        android:id="@+id/customView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="540dp"
+        android:layout_height="270dp"
+        android:background="@drawable/semi_circle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="-120dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+
+<!--    <View
+        android:id="@+id/view2"
+        android:layout_width="540dp"
+        android:layout_height="270dp"
+        android:background="@drawable/loading_circle_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="-90dp"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="540dp"
+        android:layout_height="270dp"
+        android:background="@drawable/semi_circle_3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="-90dp"
+        app:layout_constraintHorizontal_bias="0.5" />-->
+
+
+
+    <me.bastanfar.semicirclearcprogressbar.SemiCircleArcProgressBar
+        android:id="@+id/semiCircle"
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        app:percent="0"
+        app:progressBarColor="@color/teal_200"
+        app:progressPlaceHolderColor="@android:color/white"
+        app:progressBarWidth="30"
+        app:progressPlaceHolderWidth="30"
+        android:layout_marginBottom="-120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
